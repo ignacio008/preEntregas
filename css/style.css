@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(194, 253, 253);
+  background-image: linear-gradient(rgb(20, 20, 20), rgb(75, 75, 75), rgb(20, 20, 20))!important;
 }
 .lenght{
     font-size: 18px;
@@ -37,7 +37,6 @@ body{
     
     box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
   }
-  
   .plan-card h2 {
     margin-bottom: 15px;
     font-size: 27px;
@@ -68,21 +67,18 @@ body{
     font-size: 1.9rem;
     font-weight: 500;
   }
-  
   .etiquet-price p:before {
     content: "$";
     margin-right: 5px;
     font-size: 15px;
     font-weight: 300;
   }
-  
   .etiquet-price p:after {
     content: "/ MXN";
     margin-left: 5px;
     font-size: 15px;
     font-weight: 300;
   }
-  
   .etiquet-price div {
     position: absolute;
     bottom: -23px;
@@ -94,17 +90,13 @@ body{
     border-right: 13px solid transparent;
     z-index: -6;
   }
-  
   .benefits-list {
     margin-top: 16px;
   }
-  
   .benefits-list ul {
     padding: 0;
     font-size: 14px;
-    
   }
-  
   .benefits-list ul li {
     color: #4d4d4d;
     list-style: none;
@@ -164,10 +156,120 @@ body{
   }
   #formularioVistaUno{
     display: none;
+    max-width: 1200px;
+    margin: auto;
   }
   #cuadroTotal{
-    
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
   }
+  #total{
+    text-align: center;
+  }
+
+
+/* header */
+
+.header {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: header;
+  margin-bottom: 30px;
+}
+.header .header__contenedorLogo {
+  width: 20%;
+  margin-right: 50px;
+}
+.header .header__contenedorLogo .header__figure {
+  width: 80px;
+  margin: auto;
+}
+.header .header__contenedorLogo .header__figure img {
+  width: 100%;
+}
+
+.header__title {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.header__nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-toggler {
+  color: rgb(255, 255, 255);
+  border: 3px white solid;
+}
+
+.navbar {
+  font-size: 19px;
+  --bs-navbar-hover-color: rgb(252, 147, 9);
+}
+
+.header__ul {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.header__ul li {
+  padding: 20px;
+}
+.header__ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+}
+.header__ul li a:hover {
+  border-bottom: 1px solid rgb(252, 147, 9);
+  color: rgb(252, 147, 9);
+}
+
+.navbar-toggler {
+  background-color: black!important;
+}
+.texto_junto{
+  display: flex;
+}
+.numberCar{
+  font-size: 15px;
+  color: rgb(255, 196, 0);
+}
+#pay{
+  display: none;
+}
+.centro{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.offcanvas-header{
+  justify-content: flex-end!important;
+}
+@media screen and (max-width: 1199px) {
+  .header {
+    max-width: 500px;
+    flex-direction: column;
+  }
+}
 
   @media screen and (max-width: 850px) {
 .plan-card{
@@ -178,3 +280,9 @@ body{
         margin-left: 15px;
       }
   }
+  
+@media screen and (max-width: 480px) {
+  .header {
+    max-width: 300px;
+  }
+}
